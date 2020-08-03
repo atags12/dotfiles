@@ -1,0 +1,3 @@
+WALLPAPER_PATH=/home/earth/.scripts/tools/Background/Pictures/
+ls $WALLPAPER_PATH | shuf -n 1 | xargs -i cp $WALLPAPER_PATH{} /home/earth/.config/wall.png
+xwallpaper --zoom ~/.config/wall.png
