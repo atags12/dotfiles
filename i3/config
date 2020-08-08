@@ -178,6 +178,9 @@ bindsym $mod+equal 		scratchpad show
 bindsym $mod+Shift+minus 	move scratchpad
 bindsym $mod+Shift+equal 	move scratchpad
 
+for_window [title="ncmpcpp"] 	move window to scratchpad; [title="ncmpcpp"] scratchpad show
+bindsym $mod+minus [title="ncmpcpp"] scratchpad show; exec [ $(ps h -C ncmpcpp | wc -l ) = 0 ] && exec ncmpcpp
+
 for_window [class="Signal"] 	move window to scratchpad; [class="Signal"] scratchpad show
 bindsym $mod+n [class="Signal"] scratchpad show; exec [ $(ps h -C signal-desktop | wc -l ) = 0 ] && exec signal-desktop
 bindsym $mod+Shift+n		floating toggle; sticky toggle; exec --no-startup-id hover right

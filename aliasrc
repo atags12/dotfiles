@@ -1,0 +1,48 @@
+#!/bin/sh
+alias ka="killall" \
+	dictionary="vim /usr/share/cracklib/cracklib-small" \
+	umount="sudo umount" \
+	mkd="mkdir -pv" \
+	neener="echo 'Neener Neener!'; espeak 'neener neener' 2>/dev/null" \
+	hannah="espeak 'Hannah!' 2>/dev/null" \
+	aliya="echo 'Happy birthday Aliya!'; espeak 'Happy birthday aleea!' 2>/dev/null"\
+	rick="echo 'wubalubadubdub!'; espeak 'wub a lub a dub dub!' 2>/dev/null" \
+	pkg="makepkg -si" \
+	makepkg="time makepkg" \
+	name="python ~/libraries/projects/Rand_Name_Generator/Random_Name_Picker.py" \
+	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
+	calcurse="calcurse -D ~/.config/calcurse" \
+	magit="nvim -c MagitOnly" \
+	vim="nvim" \
+	p="time sudo pacman" \
+	SS="sudo systemctl" \
+	makepkg="time makepkg" \
+	f="$FILE" \
+	g="git" \
+	git="time git" \
+	trem="transmission-remote" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	x="sxiv -ft *" \
+	sdn="sudo shutdown -h now" \
+	gua="git remote | xargs -L1 git push --all" \
+	ks="sl" \
+	rm="rm -R" \
+	cd="cd" \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	sca="source ~/.config/aliasrc" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	yt="time youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
+	yta="yt -x -f bestaudio/best" \
+	ytmp3="yt -x --audio-format mp3" \
+	YT="youtube-viewer" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+	upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks" \
+	lsp="pacman -Qett --color=always | less" \
+	ffmpeg="ffmpeg -hide_banner"
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" # Use neovim for vim if present.
+
+vf() { fzf | xargs -r -I % $EDITOR % ;}
