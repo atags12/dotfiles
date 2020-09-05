@@ -35,7 +35,7 @@ set clipboard=unnamedplus
 	set number relativenumber
 	inoremap jj <ESC>
 " Toggle semicolon at end of line:
-"	nnoremap ;; :s/\v(.)$/\=submatch(1)==';' ? '' : submath(1).';'<CR> :noh <CR
+	nnoremap ;; :s/\v(.)$/\=submatch(1)==';' ? '' : submatch(1).';'<CR> :noh <CR>
 " Enable autocompletion:
 	set wildmode=longest,list,full
 " Disables automatic commenting on newline:
