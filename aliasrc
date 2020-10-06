@@ -7,7 +7,7 @@ alias ka="killall" \
 	hannah="espeak 'Hannah!' 2>/dev/null" \
 	aliya="echo 'Happy birthday Aliya!'; espeak 'Happy birthday aleea!' 2>/dev/null"\
 	rick="echo 'wubalubadubdub!'; espeak 'wub a lub a dub dub!' 2>/dev/null" \
-	pkg="makepkg -si" \
+	pkg="time makepkg -si" \
 	makepkg="time makepkg" \
 	name="python ~/libraries/projects/Rand_Name_Generator/Random_Name_Picker.py" \
 	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
@@ -18,7 +18,7 @@ alias ka="killall" \
 	SS="sudo systemctl" \
 	makepkg="time makepkg" \
 	f="$FILE" \
-	g="git" \
+	g="time git" \
 	git="time git" \
 	trem="transmission-remote" \
 	e="$EDITOR" \

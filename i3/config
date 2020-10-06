@@ -109,13 +109,14 @@ bindsym $mod+y			exec $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+Shift+y		exec --no-startup-id i3resize left
 
 #bindsym $mod+u			exec $term -e neomutt
-bindsym $mod+u			exec ssh -o IPQoS=throughput pi@192.168.1.16 "aplay /tmp/hello.wav"
+#bindsym $mod+u			exec ssh pi@192.168.169.38 "aplay /tmp/hello.wav"
+bindsym $mod+u			exec --no-startup-id schoolLinks
 bindsym $mod+Shift+u		exec --no-startup-id i3resize down
 
 bindsym $mod+i 			exec $term -e htop
 bindsym $mod+Shift+i		exec --no-startup-id i3resize up
 
-bindsym $mod+o			sticky toggle
+bindsym $mod+o			exec --no-startup-id libreoffice
 bindsym $mod+Shift+o		exec --no-startup-id i3resize right
 
 bindsym $mod+p			exec --no-startup-id lmc toggle
