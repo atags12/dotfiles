@@ -208,7 +208,9 @@ bindsym $mod+semicolon		workspace next
 bindsym $mod+apostrophe		split horizontal ;; exec $term
 bindsym $mod+slash		split vertical ;; exec $term
 bindsym $mod+Shift+slash	kill
-bindsym $mod+backslash		workspace back_and_forth
+#bindsym $mod+backslash		workspace back_and_forth
+bindsym $mod+backslash		workspace next
+bindsym $mod+Shift+backslash	workspace prev
 
 set $ws1 "1"
 set $ws2 "2"
