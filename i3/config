@@ -167,7 +167,7 @@ bindsym $mod+Shift+v		exec --no-startup-id toggletouchpad
 
 bindsym $mod+b			bar mode toggle
 #bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id hover left
-bindsym $mod+Shift+b		workspace $ws8 exec /home/earth/programs/blender-2.90.0-5a13f682ee5f-linux64/blender
+bindsym $mod+Shift+b		workspace $ws8 exec $HOME/programs/blender-2.90.0-5a13f682ee5f-linux64/blender
 
 #bindsym $mod+n			exec $term -e newsboat && pkill -RTMIN+6 i3blocks
 #bindsym $mod+n			exec --no-startup-id signal-desktop
