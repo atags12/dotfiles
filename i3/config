@@ -93,7 +93,8 @@ bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 
 bindsym $mod+w			exec $term -e nmtui
-bindsym $mod+Shift+w		workspace $ws2 ; exec --no-startup-id $BROWSER
+#bindsym $mod+Shift+w		workspace $ws2 ; exec --no-startup-id $BROWSER
+bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
 
 bindsym $mod+e			exec --no-startup-id endless-sky; workspace $ws6
 bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
