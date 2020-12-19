@@ -396,7 +396,8 @@ bindsym XF86Reload		restart
 ##bindsym XF86Launch8		exec
 ##bindsym XF86Launch9		exec
 #bindsym XF86AudioMicMute	exec $micmute
-bindsym XF86AudioMicMute	exec pactl set-source-mute "$DEFAULT_SOURCE" "toggle"
+#bindsym XF86AudioMicMute	exec pactl set-source-mute "$DEFAULT_SOURCE" "toggle"
+bindsym XF86AudioMicMute	exec pactl set-source-mute "$(pactl info | grep 'Default Source' | cut -d ' ' -f3)" "toggle"
 bindsym XF86TouchpadOn		exec --no-startup-id synclient TouchpadOff=0
 bindsym XF86TouchpadOff		exec --no-startup-id synclient TouchpadOff=1
 bindsym XF86Suspend		exec --no-startup-id lockscreen

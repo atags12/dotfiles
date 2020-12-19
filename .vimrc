@@ -26,6 +26,9 @@ set nohlsearch
 set clipboard=unnamedplus
 
 
+" spellcheck
+"	setlocal spell spelllang=en_us
+
 " Some basics:
 	nnoremap c "_c
 	set nocompatible
