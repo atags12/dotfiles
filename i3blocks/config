@@ -72,7 +72,8 @@ label=📅
 interval=3
 
 [internet]
-command=ping -c 2 8.8.8.8 > /dev/null && echo "📡 Internet is up"
+#command=ping -c 2 8.8.8.8 > /dev/null && echo "📡 Internet is up"
+command=ping -c 2 8.8.8.8 > /dev/null && echo "📡 Internet is up" || echo "❌📡 Internet is down"
 interval=1
 
 [help]
